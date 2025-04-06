@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice 13</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="./assets/catty_12.jpg"
+        class="cattyHeader"
+        alt="Catty Image"
+        onclick="window.location.href='#'"
+      />
+      <nav>
+        <a href="#">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <input type="button" class="btn-login" value="Login" />
+      </nav>
+
+      <img class="menu_image" src="./assets/menus.png" />
+    </header>
+
+    <div class="side_header">
+      <div class="nav_side">
+        <a href="#">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="btn-div-login">
+        <input type="button" class="btn-login" value="Login" />
+      </div>
+    </div>
+
+    <section class="login">
+      <div class="flex-login">
+        <div class="grid-login">
+          <div class="login-background">
+            <img
+              class="login-cattyMountain"
+              src="./assets/cattyMountain.jpg"
+              alt="Catty Background Image"
+            />
+          </div>
+          <div class="login-divForm">
+            <div class="loginDiv-arrowBack">
+              <img
+                class="login-arrowBack"
+                src="./assets/back-arrow.png"
+                alt="Arrow Back Image"
+              />
+            </div>
+            <form
+              class="login-form"
+              name="form_login"
+              action="account.php"
+              onsubmit="return validate_login()"
+            >
+              <h2>Login</h2>
+              <label>Email</label>
+              <input type="text" class="username" name="username" />
+              <label>Password</label>
+              <input type="password" class="password" name="password" />
+              <a
+                class="login-forgetPassword"
+                href="#"
+                alt="Forget A Password Hyperlink"
+                >Forget a password?</a
+              >
+              <div>
+                <input
+                  type="submit"
+                  class="btn-FormSignUp"
+                  name="btn-signup"
+                  value="Signup"
+                />
+                <input
+                  type="submit"
+                  class="btn-FormSignLogin"
+                  name="btn-login"
+                  value="login"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="signup">
+      <div class="flex-signup">
+        <div class="grid-signup">
+          <div class="signup-background">
+            <img
+              class="signup-cattyMountain"
+              src="./assets/cattyMountain.jpg"
+              alt="Catty Background Image"
+            />
+          </div>
+          <div class="signup-divForm">
+            <div class="signupDiv-arrowBack">
+              <img
+                class="signup-arrowBack"
+                src="./assets/back-arrow.png"
+                alt="Arrow Back Image"
+              />
+            </div>
+            <form
+              class="signup-form"
+              name="form_signup"
+              action="account.php"
+              onsubmit="return validate_signup()"
+            >
+              <h2>Signup</h2>
+              <label>Email</label>
+              <input type="text" class="username" name="username" />
+              <label>Password</label>
+              <input type="password" class="password" name="password" />
+              <a
+                class="signup-forgetPassword"
+                href="#"
+                alt="Forget A Password Hyperlink"
+                >Forget a password?</a
+              >
+              <div>
+                <input
+                  type="submit"
+                  class="btn-FormSignUp"
+                  name="btn-signup"
+                  value="Signup"
+                />
+                <input
+                  type="submit"
+                  class="btn-FormSignLogin"
+                  name="btn-login"
+                  value="login"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="home" class="home">
+      <img
+        class="cattyBackground"
+        src="./assets/cattyBackground.jpg"
+        alt="Catty Background Image"
+      />
+      <div class="flex-home">
+        <div class="grid-home">
+          <div class="catty-frontDetail">
+            <div>
+              <h1>Welcome to Catty</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+                reprehenderit esse tempora in, quos exercitationem explicabo
+                inventore praesentium, vero corrupti fugit eveniet laudantium,
+                optio et natus amet quod perferendis illum.
+              </p>
+            </div>
+            <div class="two-btn">
+              <input type="button" class="btn-signUp" value="Signup" />
+              <input type="button" class="btn-shopNow" value="Shop now" />
+            </div>
+          </div>
+          <div class="catThatFlex">
+            <img
+              src="./assets/catty_10-transparent.png"
+              class="cattyFlex"
+              alt="Cat Flexing Image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="shop" class="shop">
+      <div class="flex-shop">
+        <div class="grid-shop">
+          <div class="div-imageShop">
+            <img
+              class="shopImage"
+              src="./assets/catty_5.jpg"
+              alt="Shop Brand Image"
+            />
+          </div>
+
+          <div class="div-textShop">
+            <div class="text-shop">
+              <h2>Citty Package</h2>
+              <input type="button" class="btn-shop" value="Request Now" />
+              <input type="button" class="btn-shop" value="Request Now" />
+              <input type="button" class="btn-shop" value="Request Now" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="flex-about">
+        <div class="grid-about">
+          <div class="div-catty_1">
+            <img
+              class="catty-aboutImage"
+              src="./assets/catty_2.jpg"
+              alt="Catty About Image"
+            />
+          </div>
+
+          <div class="div-catty_2">
+            <img
+              class="catty-aboutImage"
+              src="./assets/catty_7.jpg"
+              alt="Catty About Image"
+            />
+          </div>
+
+          <div class="div-aboutCatty_1">
+            <div>
+              <h2>About myself</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                sunt suscipit iste vitae eos, debitis nam nostrum in.
+                Perferendis optio numquam atque itaque natus exercitationem ut
+                vitae quaerat eaque vero?
+              </p>
+            </div>
+          </div>
+
+          <div class="div-aboutCatty_2">
+            <div>
+              <h2>About Us</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                inventore repellat modi eos natus amet eum quas, quos recusandae
+                neque veritatis saepe reprehenderit earum cum doloribus possimus
+                dolorum sunt magnam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="flex-contact">
+        <div class="div-imageCloud_1">
+          <img class="cloud" src="./assets/cloud.png" alt="Cloud Image" />
+        </div>
+        <h2>Get in touch</h2>
+        <div class="div-imageCloud_2">
+          <img class="cloud" src="./assets/cloud.png" alt="Cloud Image" />
+        </div>
+
+        <div class="grid-contact">
+          <div class="div-textDetail">
+            <img
+              class="cattyDetail"
+              src="./assets/catty_11.jpg"
+              alt="Catty DetailImage"
+            />
+            <div class="contactDetail">
+              <p>Number: 09123456789</p>
+              <p>Email: example@gmail.com</p>
+              <p>Facebook: example@User</p>
+            </div>
+          </div>
+          <div class="div-iconDetail">
+            <img
+              class="btn-iconContact"
+              src="./assets/phone-call.png"
+              alt="Mobile Number Icon Image"
+            />
+            <img
+              class="btn-iconContact"
+              src="./assets/gmail-logo.png"
+              alt="Email Icon Image"
+            />
+            <img
+              class="btn-iconContact"
+              src="./assets/facebook-app-symbol.png"
+              alt="Facebook Icon Image"
+            />
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>©Cattyt</p>
+      </footer>
+    </section>
+
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
